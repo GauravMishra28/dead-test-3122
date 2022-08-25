@@ -6,6 +6,7 @@ import LargeWithLogoLeft from "./Components/Footer";
 import Navbar from "./Components/Navbar";
 import Registration from "./Authentication/Registration";
 
+
 function App() {
   return (
     <div>
@@ -13,6 +14,7 @@ function App() {
       <AllRoutes/>
       <LargeWithLogoLeft/>
       {/* <Login/> */}
+  
     </div>
   );
 }
