@@ -1,4 +1,5 @@
 import { ReactNode } from 'react';
+// import image from "../Images/Screenshot 2022-08-24 at 3.06.50 PM"
 
 import {
   Box,
@@ -13,7 +14,8 @@ import {
 
 const Logo = () => {
   return (
-      <img  height={32} viewBox="0 0 120 28" alt='logo' src="../Images/Screenshot 2022-08-24 at 3.06.50 PM.png"/>
+    <></>
+      // <img  height={32} viewBox="0 0 120 28" alt='logo' src="https://ksr-static.imgix.net/c51lnrg9-doodle_continue.png?ixlib=rb-2.1.0&auto=compress%2Cformat&w=1000&fit=min&s=dc34091fa7d24f5d676e0e0201337f9b"/>
     // <svg
     //   height={32}
     //   viewBox="0 0 120 28"
@@ -29,11 +31,11 @@ export default function LargeWithLogoLeft() {
     <Box
       bg={useColorModeValue('gray.50', 'gray.900')}
       color={useColorModeValue('gray.700', 'gray.200')}>
-      <Container as={Stack} maxW={'6xl'} py={10}>
+      <Container as={Stack} maxW={'8xl'} py={10}>
         <SimpleGrid
           templateColumns={{ sm: '1fr 1fr', md: '2fr 1fr 1fr 1fr 1fr' }}
           spacing={8}>
-          <Stack spacing={6}>
+          <Stack border="1px solid tomato" spacing={16}>
             <Box>
               <Logo  />
               {/* color={useColorModeValue('gray.700', 'white')} */}
@@ -42,46 +44,38 @@ export default function LargeWithLogoLeft() {
               Kickstarter, PBC © 2022
             </Text>
           </Stack>
+    
           <Stack align={'flex-start'}>
-            <Text fontWeight={'600'} fontSize={'md'} mb={2}>Product</Text>
-            <Link href={'#'}>Overview</Link>
-            <Link href={'#'}>Features</Link>
-            <Link href={'#'}>Tutorials</Link>           
-
-            <Link href={'#'}>Pricing</Link>
-            <Link href={'#'}>Releases</Link>
-          </Stack>
-          <Stack align={'flex-start'}>
-            <Text fontWeight={'600'} fontSize={'md'} mb={2}>Company</Text>
-            <Link href={'#'}>About</Link>
+            <Text fontWeight={'600'} fontSize={'md'} mb={2}>ABOUT</Text>
+            <Link href={'#'}>About us</Link>
             <Link href={'#'}>Our charter</Link>
             <Link href={'#'}>Stats</Link>
             <Link href={'#'}>Press</Link>
             <Link href={'#'}>Jobs</Link>
           </Stack>
           <Stack align={'flex-start'}>
-            <Text>Support</Text>
+            <Text fontWeight={'600'} fontSize={'md'} mb={2}>SUPPORT</Text>
             <Link href={'#'}>Help Center</Link>
-            <Link href={'#'}>Terms of Service</Link>
-            <Link href={'#'}>Legal</Link>
-            <Link href={'#'}>Privacy Policy</Link>
-            <Link href={'#'}>Status</Link>
+            <Link href={'#'}>Our Rules</Link>
+            <Link href={'#'}>Creator Resources</Link>
+            <Link href={'#'}>Forward Funds</Link>
+            <Link href={'#'}>Brand Assets</Link>
           </Stack>
-
-{/* 
-SUPPORT
-Help Center
-Our Rules
-Creator Resources
-Forward Funds
-Brand assets */}
+           <Stack align={'flex-start'}>
+            <Text fontWeight={'600'} fontSize={'md'} mb={2}>MORE FROM KICKSTARTER</Text>
+            <Link href={'#'}>Kickstarter Magazine</Link>
+            <Link href={'#'}>The Creative Independent</Link>
+            <Link href={'#'}>The Kickstarter Blog</Link>           
+            <Link href={'#'}>Mobile apps</Link>
+            <Link href={'#'}>Research</Link>
+          </Stack>
+    
           <Stack align={'flex-start'}>
-            <Text>Follow Us</Text>
-            <Link href={'#'}>Facebook</Link>
-            <Link href={'#'}>Twitter</Link>
-            <Link href={'#'}>Dribbble</Link>
-            <Link href={'#'}>Instagram</Link>
-            <Link href={'#'}>LinkedIn</Link>
+            <Text fontWeight={'600'} fontSize={'md'} mb={2}>Follow Us</Text>
+            <Link href={'https://www.facebook.com/Kickstarter/'}>Facebook</Link>
+            <Link href={'https://twitter.com/kickstarter'}>Twitter</Link>
+            <Link href={'https://www.youtube.com/user/kickstarter'}>Youtube</Link>
+            <Link href={'https://www.instagram.com/kickstarter/'}>Instagram</Link>
           </Stack>
         </SimpleGrid>
       </Container>

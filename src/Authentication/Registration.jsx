@@ -42,7 +42,7 @@ const handleSubmit=(e)=>{
         // minH={'100vh'}
         align={'center'}
         justify={'center'}
-        bg={useColorModeValue('gray.300', 'gray.800')}>
+        bgGradient='linear(to-r, gray.300, yellow.400, pink.200)'>
         <Stack spacing={2} mx={'auto'} maxW={'lg'} py={12} px={6}>
           <Box
             rounded={'lg'}

@@ -2,6 +2,7 @@ import React from 'react'
 
 import { useState } from 'react';
 import { ViewIcon, ViewOffIcon } from '@chakra-ui/icons';
+import { Link } from 'react-router-dom'
 
 import { useNavigate } from 'react-router-dom';
 import {
@@ -17,7 +18,6 @@ import {
     Heading,
     Text,
     useColorModeValue,
-    Link,
   } from '@chakra-ui/react';
 
 
@@ -56,7 +56,7 @@ export default function Login() {
 // minH={'100vh'}
 align={'center'}
 justify={'center'}
-bg={useColorModeValue('gray.300', 'gray.800')}>
+bgGradient='linear(to-r, green.200, pink.500)'>
 <Stack spacing={2} mx={'auto'} maxW={'lg'} py={12} px={6}>
   <Box
     rounded={'lg'}
@@ -120,7 +120,8 @@ autoComplete="off" />
       </Stack>
     </Stack>
     <Text>New to website?
-      <Link to="/signup">Signup</Link>
+     <Link to="/signup">Signup</Link>
+     
   </Text>
   </Box>
 </Stack>
