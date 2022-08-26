@@ -27,18 +27,18 @@ export default function ToughPage() {
    }
   return (
     <>
-        <Box>
+        <Box  >
         {
             data.map((el)=>
-            <Box key={el.id} display="flex" gap="1.5rem">
+            <Box key={el.id} display="flex" >
                <Box>
                 <Image width="90%" src={el.photo.little}/> 
                </Box>
                <Box>
                    <Center>
-                  <Text mb="1rem" color="black.900"size="2xl">{el.name}</Text> 
+                  <Text fontWeight='bold' mb="0.5rem"  fontSize="13px">{el.name}</Text> 
                   </Center>
-                  <Text size="lg">{el.creator.name}</Text>
+                  <Text  color="gray" fontSize="13px" size="md">{el.creator.name}</Text>
               
                </Box>
             </Box>)

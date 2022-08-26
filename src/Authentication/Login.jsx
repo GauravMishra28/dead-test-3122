@@ -32,8 +32,11 @@ export default function Login() {
           };
 
         const handleSubmit=()=>{
-         
-        if(parseddata.email !== data.email) 
+          if(data.email.length<1 && data.password.length<1)
+          {
+           alert("Field's cant be empty")
+          }
+       else if(parseddata.email !== data.email) 
         {alert("No Account Found")}
           else if(parseddata.password !== data.password ){
             alert("Password Wrong")
@@ -48,8 +51,8 @@ export default function Login() {
         setData({email:"", password:""}) 
         }
            
-    //  console.log(data)
-    // console.log(parseddata)
+     console.log(data)
+    console.log(parseddata)
   return (
 
     <Flex

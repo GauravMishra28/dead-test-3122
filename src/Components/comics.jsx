@@ -1,16 +1,11 @@
 import React from 'react'
-import Secondone from './2ndone'
-import SplitScreen from './HomePageCard'
-import Landingpage from './Landingpage'
-import CaptionCarousel from './slider'
-import StatisticsCard from './statscard'
-import data from "../../utils/data.json"
+import SplitScreen from './Home/HomePageCard'
+import CaptionCarousel from './Home/slider'
+import data from "../utils/data.json"
 
-export default function Homepage() {
+export default function ComicsPage() {
   return (
-    <div>
-       <StatisticsCard/> 
-       <Landingpage/>
+   <>
        <SplitScreen image={data.splitscreendata[0].image} title={data.splitscreendata[0].title}desc={data.splitscreendata[0].body}/>
        <CaptionCarousel cards={data.cards}/>
        <SplitScreen image={data.splitscreendata[1].image} title={data.splitscreendata[1].title}desc={data.splitscreendata[1].body}/>
@@ -22,6 +17,6 @@ export default function Homepage() {
        <SplitScreen image={data.splitscreendata[4].image} title={data.splitscreendata[4].title}desc={data.splitscreendata[4].body}/>
        <CaptionCarousel cards={data.cards}/>
        <SplitScreen image={data.splitscreendata[5].image} title={data.splitscreendata[5].title}desc={data.splitscreendata[5].body}/>
-    </div>
+   </>
   )
 }
