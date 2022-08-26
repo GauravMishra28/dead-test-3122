@@ -32,10 +32,16 @@ import {
 // let localarr=[]
 const handleSubmit=(e)=>{
     e.preventDefault()
+    if(data.username.length<1 && data.email.length<1 && data.password.length<1)
+    {
+     alert("Field's cant be empty")
+    }
+    else{
     // localarr.push(data)
     localStorage.setItem("userdetails", JSON.stringify(data))
     setData({username:"", email:"", phone:"", password:"",id:""})
     navigate("/login")
+  }
 }
     return (
       <Flex

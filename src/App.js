@@ -3,17 +3,22 @@ import SignupCard from "./Authentication/Registration";
 
 
 import LargeWithLogoLeft from "./Components/Footer";
+import WithSubnavigation from "./Components/Home/respnavbar.tsx";
+import Svg from "./Components/Home/svg";
 import Navbar from "./Components/Navbar";
-import Registration from "./Authentication/Registration";
+
+
 
 
 function App() {
   return (
     <div>
-      <Navbar/>
+      <Svg/>
+      {/* <Navbar/> */}
+      <WithSubnavigation/>
       <AllRoutes/>
       <LargeWithLogoLeft/>
-      {/* <Login/> */}
+
   
     </div>
   );
