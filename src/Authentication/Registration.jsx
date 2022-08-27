@@ -16,6 +16,8 @@ import {
   import { useState } from 'react';
   import { ViewIcon, ViewOffIcon } from '@chakra-ui/icons';
   import { useNavigate } from 'react-router-dom';
+  import swal from 'sweetalert';
+
   
   export default function Registration() {
     const [showPassword, setShowPassword] = useState(false);
@@ -34,7 +36,7 @@ const handleSubmit=(e)=>{
     e.preventDefault()
     if(data.username.length<1 && data.email.length<1 && data.password.length<1)
     {
-     alert("Field's cant be empty")
+     swal("Sorry, Field's cant be empty!");
     }
     else{
     // localarr.push(data)

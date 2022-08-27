@@ -7,7 +7,7 @@ import {
     Text,
     useBreakpointValue,
   } from '@chakra-ui/react';
-import Secondone from './2ndone';
+
 import CaptionCarousel from './slider';
   
   export default function SplitScreen({image,title,desc}) {
@@ -51,8 +51,6 @@ import CaptionCarousel from './slider';
           </Stack>
         </Flex>
       </Stack>
-    
-      {/* <Secondone/> */}
 
       </>
     );

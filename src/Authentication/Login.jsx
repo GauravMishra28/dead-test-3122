@@ -1,5 +1,5 @@
 import React from 'react'
-
+import swal from 'sweetalert';
 import { useState } from 'react';
 import { ViewIcon, ViewOffIcon } from '@chakra-ui/icons';
 import { Link } from 'react-router-dom'
@@ -44,8 +44,8 @@ export default function Login() {
         else if(parseddata.email === data.email && parseddata.password === data.password){
             alert("fetching data")
             setTimeout(() => {
-                alert("Welcome")
-             navigate("/")
+             swal(`Welcome back! ${parseddata.username}`);
+               navigate("/")
             }, 500);    
         }
         setData({email:"", password:""}) 
@@ -122,9 +122,10 @@ autoComplete="off" />
       <Stack pt={6}>
       </Stack>
     </Stack>
-    <Text>New to website?
-     <Link to="/signup">Signup</Link>
-     
+    <Text marginLeft="20px">New to website?
+     <Link to="/signup"> <Text as="span" fontWeight={600} color="red" _hover={{
+           color: 'blue.500',
+          }}>Signup</Text> </Link>
   </Text>
   </Box>
 </Stack>

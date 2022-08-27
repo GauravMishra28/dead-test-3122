@@ -35,10 +35,12 @@ export default function LargeWithLogoLeft() {
         <SimpleGrid
           templateColumns={{ sm: '1fr 1fr', md: '2fr 1fr 1fr 1fr 1fr' }}
           spacing={8}>
-          <Stack border="1px solid tomato" spacing={16}>
+          <Stack spacing={16}>
             <Box>
-              <Logo  />
+              {/* <Image src={"../Images/Screenshot 2022-08-24 at 3.06.50 PM.png"}/> */}
+              {/* <Logo  /> */}
               {/* color={useColorModeValue('gray.700', 'white')} */}
+              
             </Box>
             <Text fontSize={'sm'}>
               Kickstarter, PBC © 2022

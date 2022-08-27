@@ -6,8 +6,9 @@
         "text":
           "Skyrim with pixel art. Influenced by classic and modern games, World of Anterra is an innovative, open world roleplaying game.",
         "image":
-          "https://ksr-ugc.imgix.net/assets/038/341/360/f7c3d22a5ee47d4f66e7f3ab2038f497_original.jpg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1661027665&auto=format&frame=1&q=92&s=68d189c98c7672b315a01b54b3eb8330",
+          "https://ksr-ugc.imgix.net/assets/038/298/665/dac3f87db3e059305a6ad171d76997d4_original.jpg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1660680838&auto=format&frame=1&q=92&s=e3544d590a6e404488e8e3cfc64c21dd",
          "creator":"By 81monkeys",
+         "backers": 97,
          "desc": "Inspired by modern and classic games, World of Anterra is a highly interactive, nonlinear, open world RPG. The game features an endlessly explorable open world, deep progression systems, fast paced combat, and rich lore, all wrapped in a satisfying and accessible interface. It’s the type of game only an independent studio could make!"
       },
       
@@ -18,7 +19,9 @@
           "Cuddle the constellations with a zodiac-inspired stuffed toy.",
         "image":
           "https://ksr-ugc.imgix.net/assets/038/368/086/41e5f512ae7e43281111287bafde3974_original.jpg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1661272961&auto=format&frame=1&q=92&s=e82bef9417986b92ddcecbbb357a7bcd",
-          "creator":"Emily Fischer"
+          "creator":"Emily Fischer",
+          "backers": 162,
+          "desc": "Inspired by modern and classic games, World of Anterra is a highly interactive, nonlinear, open world RPG. The game features an endlessly explorable open world, deep progression systems, fast paced combat, and rich lore, all wrapped in a satisfying and accessible interface. It’s the type of game only an independent studio could make!"
       },
       {
         "id": 3,
@@ -27,7 +30,9 @@
           "A 120-page deluxe hardcover featuring the art of Danni Shinya Luo, echoing the idea of “bleeding edges” through watercolor blooms.",
         "image":
           "https://ksr-ugc.imgix.net/assets/038/155/137/f2189b9c3ced7decca3b610df56de9eb_original.jpg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1659470884&auto=format&frame=1&q=92&s=7c6754b9090ca1037fc54c8c71022c55",
-          "creator":"By Rocketship" 
+          "creator":"By Rocketship",
+          "backers": 192,
+          "desc": "Inspired by modern and classic games, World of Anterra is a highly interactive, nonlinear, open world RPG. The game features an endlessly explorable open world, deep progression systems, fast paced combat, and rich lore, all wrapped in a satisfying and accessible interface. It’s the type of game only an independent studio could make!"
       },
       {
         "id": 4,  
@@ -36,7 +41,9 @@
             "The Lord of the Rings meets The Last of the Mohicans in a 35 page anticolonial, flintlock fantasy comic.",
           "image":
             "https://ksr-ugc.imgix.net/assets/037/710/699/e4f49a44389f45a91e12112893be508e_original.png?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1655787417&auto=format&frame=1&q=92&s=c4d6083c3d3ba332288a5f157c873cf8",
-           "creator":"By John J. Perez"
+           "creator":"By John J. Perez",
+           "backers": 247,
+           "desc": "Inspired by modern and classic games, World of Anterra is a highly interactive, nonlinear, open world RPG. The game features an endlessly explorable open world, deep progression systems, fast paced combat, and rich lore, all wrapped in a satisfying and accessible interface. It’s the type of game only an independent studio could make!"
         },
         {
           "id": 5,
@@ -45,7 +52,9 @@
             " NASA Automatic Watch Can Withstand 100 Earth Atmospheres 🚀 Commemorating the farthest human-made object in space, the individually numbered Voyager Automatic Deep Space Diver can go anywhere",
           "image":
             "https://ksr-ugc.imgix.net/assets/038/069/397/4cb3fbba5ea235d1de70afde77cc6268_original.jpg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1658792407&auto=format&frame=1&q=92&s=3ad6002098fcb63ada9ab1a4d3e6f1c8",
-           "creator":"By Xeric"
+           "creator":"By Xeric",
+           "backers": 112,
+           "desc": "Inspired by modern and classic games, World of Anterra is a highly interactive, nonlinear, open world RPG. The game features an endlessly explorable open world, deep progression systems, fast paced combat, and rich lore, all wrapped in a satisfying and accessible interface. It’s the type of game only an independent studio could make!"
         },
         {
           "id": 6,
@@ -54,7 +63,9 @@
             "A gallery-sized fantasy graphic novel about a man who could be the reborn Genghis Khan lushly illustrated by Antoine Carrion.",
           "image":
             "https://ksr-ugc.imgix.net/assets/038/368/223/60c27b9c201a0e2511b26660beb3fe25_original.jpg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1661274011&auto=format&frame=1&q=92&s=ac0d40a42cb7ab44059d714cfd05e94c",
-           "creator":"By Neurobellum Productions" 
+           "creator":"By Neurobellum Productions" ,
+           "backers": 300,
+           "desc": "Inspired by modern and classic games, World of Anterra is a highly interactive, nonlinear, open world RPG. The game features an endlessly explorable open world, deep progression systems, fast paced combat, and rich lore, all wrapped in a satisfying and accessible interface. It’s the type of game only an independent studio could make!"
         }
     ],
 
@@ -99,7 +110,7 @@
     ],
     "cards2" : [
       {
-        "id": 1,
+        "id": 7,
         "title": "A Steampunk Carol: A Festive Nutcracker Retelling",
         "text":
           "An 86+ page steampunk-infused graphic novel celebrating The Nutcracker and Mouse King in a special retelling of the classic tale.",
@@ -110,51 +121,56 @@
       },
     
       {
-        "id": 2,
+        "id": 8,
         "title": "Wizards & Relics Awakening - A Magical Card Game",
         "text": "An exciting standalone expansion set to the magical dueling card game Wizards & Relics!",
         "image":
           "https://ksr-ugc.imgix.net/assets/038/210/182/eddd7359ff2d3ccbc136c7f931ff0b71_original.jpg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1659968667&auto=format&frame=1&q=92&s=9494fef2e787a8e9448f6a637c75dd65",
-          "creator":"By Mike Bregel"
+          "creator":"By Mike Bregel",
+          "desc": "Inspired by modern and classic games, World of Anterra is a highly interactive, nonlinear, open world RPG. The game features an endlessly explorable open world, deep progression systems, fast paced combat, and rich lore, all wrapped in a satisfying and accessible interface. It’s the type of game only an independent studio could make!"
       },
 
       {
-        "id": 3,
+        "id": 9,
         "title": "Sea of Legends: Vengeance of the Empires",
         "text":
           "A new expansion for Sea of Legends along with a reprint of the original and expansion.",
         "image":
           "https://ksr-ugc.imgix.net/assets/038/156/266/6a16b853846eba5c8d07255c89a7edf4_original.png?ixlib=rb-4.0.2&crop=faces&w=560&h=315&fit=crop&v=1659477319&auto=format&frame=1&q=92&s=31aa7d4f814282d693ec517091652b3f",
-          "creator":"By Zach Weisman" 
+          "creator":"By Zach Weisman" ,
+          "desc": "Inspired by modern and classic games, World of Anterra is a highly interactive, nonlinear, open world RPG. The game features an endlessly explorable open world, deep progression systems, fast paced combat, and rich lore, all wrapped in a satisfying and accessible interface. It’s the type of game only an independent studio could make!"
       },
 
 
       {
-        "id": 4,  
+        "id": 10,  
         "title": "Reviving a critically-acclaimed but forgotten American novel",
           "text":
             "Publishing a new edition of B. H. Friedman's brilliant 1964 novel YARBOROUGH.",
           "image":
             "https://ksr-ugc.imgix.net/assets/038/383/078/ac2569dc09677f1cbd03fd6ce4a568aa_original.png?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1661388031&auto=format&frame=1&q=92&s=432441e1b06e891cf9ae74ae1be3e0b0",
-           "creator":"By Rick Schober"
+           "creator":"By Rick Schober",
+           "desc": "Inspired by modern and classic games, World of Anterra is a highly interactive, nonlinear, open world RPG. The game features an endlessly explorable open world, deep progression systems, fast paced combat, and rich lore, all wrapped in a satisfying and accessible interface. It’s the type of game only an independent studio could make!"
         },
         {
-          "id": 5,
+          "id": 11,
           "title": "Solidteknics Kitchen Tools - Lil Flippa & TSS!",
           "text":
             " 100% Made in Australia. Versatile cooking tools in both Stainless & Titanium! Built to last generations."
 ,          "image":
             "https://ksr-ugc.imgix.net/assets/038/259/872/381e93e3b153a5551ee9fee496dab6b2_original.png?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1660335626&auto=format&frame=1&q=92&s=4336da2b77dca4d5e2af0e3a1a4755ee",
-           "creator":"By Rebecca Ramsay"
+           "creator":"By Rebecca Ramsay",
+           "desc": "Inspired by modern and classic games, World of Anterra is a highly interactive, nonlinear, open world RPG. The game features an endlessly explorable open world, deep progression systems, fast paced combat, and rich lore, all wrapped in a satisfying and accessible interface. It’s the type of game only an independent studio could make!"
         },
         {
-          "id": 6,
+          "id": 12,
           "title": "Doomensions: Pop-Up Mystery Manor",
           "text":
             "Solve an immersive, 3D pop-up escape room in a box! From the devious minds behind Curious Correspondence and Mysterious Package Company",
           "image":
             "https://ksr-ugc.imgix.net/assets/038/213/416/ae3a12a5bd5ed617fab272f225252a6a_original.jpg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1659987275&auto=format&frame=1&q=92&s=af080988e336eccd3d0e9776013c39c5",
-           "creator":"By Curious Correspondence" 
+           "creator":"By Curious Correspondence" ,
+           "desc": "Inspired by modern and classic games, World of Anterra is a highly interactive, nonlinear, open world RPG. The game features an endlessly explorable open world, deep progression systems, fast paced combat, and rich lore, all wrapped in a satisfying and accessible interface. It’s the type of game only an independent studio could make!"
         }
     ]
 }
