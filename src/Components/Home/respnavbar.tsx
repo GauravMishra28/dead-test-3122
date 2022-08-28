@@ -12,8 +12,10 @@ import {
     PopoverTrigger,
     PopoverContent,
     useColorModeValue,
-    useBreakpointValue,
+
     useDisclosure,
+    Center,
+  
   } from '@chakra-ui/react';
   import {
     HamburgerIcon,
@@ -21,6 +23,7 @@ import {
     ChevronDownIcon,
     ChevronRightIcon,
   } from '@chakra-ui/icons';
+import Darkmode from '../../Authentication/darkmode';
   
   export default function WithSubnavigation() {
     const { isOpen, onToggle } = useDisclosure();
@@ -58,37 +61,10 @@ import {
               Logo
             </Text> */}
   
-            <Flex display={{ base: 'none', md: 'flex' }} ml={10}>
+            <Flex display={{ base: 'none', md: 'flex' }} minW={"100%"} >
               <DesktopNav />
             </Flex>
           </Flex>
-  
-          {/* <Stack
-            flex={{ base: 1, md: 0 }}
-            justify={'flex-end'}
-            direction={'row'}
-            spacing={6}>
-            <Button
-              as={'a'}
-              fontSize={'sm'}
-              fontWeight={400}
-              variant={'link'}
-              href={'#'}>
-              Sign In
-            </Button>
-            <Button
-              display={{ base: 'none', md: 'inline-flex' }}
-              fontSize={'sm'}
-              fontWeight={600}
-              color={'white'}
-              bg={'pink.400'}
-            //   href={}
-              _hover={{
-                bg: 'pink.300',
-              }}>
-              Sign Up
-            </Button>
-          </Stack> */}
         </Flex>
   
         <Collapse in={isOpen} animateOpacity>
@@ -104,9 +80,10 @@ import {
     const popoverContentBgColor = useColorModeValue('white', 'gray.800');
   
     return (
-      <Stack direction={'row'} spacing={20}>
+      <Center minW={"100%"} > 
+         <Flex minW={"90%"}  justify="space-between" gap={15} >
         {NAV_ITEMS.map((navItem) => (
-          <Box key={navItem.label}>
+          <Box  key={navItem.label}>
             <Popover trigger={'hover'} placement={'bottom-start'}>
               <PopoverTrigger>
                 <Link
@@ -126,6 +103,7 @@ import {
               {navItem.children && (
                 <PopoverContent
                   border={0}
+                  
                   boxShadow={'xl'}
                   bg={popoverContentBgColor}
                   p={4}
@@ -141,7 +119,10 @@ import {
             </Popover>
           </Box>
         ))}
-      </Stack>
+        <Darkmode/>
+              </Flex>
+      </Center>
+     
     );
   };
   
@@ -155,7 +136,7 @@ import {
         rounded={'md'}
         _hover={{ bg: useColorModeValue('pink.50', 'gray.900') }}>
         <Stack direction={'row'} align={'center'}>
-          <Box>
+          <Box >
             <Text
               transition={'all .3s ease'}
               _groupHover={{ color: 'pink.400' }}

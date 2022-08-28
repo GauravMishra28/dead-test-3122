@@ -15,7 +15,7 @@ export default function ToughPage() {
    },[page])
 
    const fetchData=(page)=>{
-       console.log(page)
+       
        axios(`https://morning-inlet-31230.herokuapp.com/projects?_limit=3&_page=${page}`)
        .then((res)=>setData(res.data)).catch((err)=>alert(err))
    }

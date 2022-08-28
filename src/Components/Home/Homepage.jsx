@@ -1,45 +1,71 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import SplitScreen from './HomePageCard'
 import Landingpage from './Landingpage'
 import CaptionCarousel from './slider'
 import StatisticsCard from './statscard'
-import data from "../../utils/data.json"
-import { Link, useNavigate } from 'react-router-dom'
+
+import { useNavigate } from 'react-router-dom'
+import axios from 'axios'
 
 export default function Homepage() {
+  const[data,setData]= useState([])
+  const[data2,setData2]= useState([])
+  const[data3,setData3]= useState([])
   const Nav= useNavigate()
 
   const productFunc=(id)=>{
-    // console.log(id);
       Nav(`/${id}`)
-  //  { <Link to={`/${id}`}></Link>}
+  }
+
+  useEffect(()=>{
+    getData()
+    getData2()
+    getData3()
+  },[])
+
+  const getData=()=>{
+    axios(` https://quiet-lake-10107.herokuapp.com/cards`)
+    .then((res)=>setData(res.data))
+    .catch((err)=>alert(err))
+  }
+  const getData2=()=>{
+    axios(` https://quiet-lake-10107.herokuapp.com/splitscreendata`)
+    .then((res)=>setData2(res.data))
+    .catch((err)=>alert(err))
+  }
+  const getData3=()=>{
+    axios(` https://quiet-lake-10107.herokuapp.com/cards2`)
+    .then((res)=>setData3(res.data))
+    .catch((err)=>alert(err))
   }
 
   return (
     <div>
        <StatisticsCard/> 
        <Landingpage/>
-       <SplitScreen image={data.splitscreendata[0].image} title={data.splitscreendata[0].title}desc={data.splitscreendata[0].body}/>
+       <SplitScreen image={data2[0]?.image} title={data2[0]?.title} desc={data2[0]?.body}/>
 
-       <CaptionCarousel productFunc={productFunc}cards={data.cards}/>
+       <CaptionCarousel productFunc={productFunc}cards={data}/>
+        
+         <SplitScreen image={data2[1]?.image} title={data2[1]?.title} desc={data2[1]?.body}/>
 
-       <SplitScreen image={data.splitscreendata[1].image} title={data.splitscreendata[1].title}desc={data.splitscreendata[1].body}/>
+         <CaptionCarousel productFunc={productFunc} cards={data3}/>
 
-       <CaptionCarousel productFunc={productFunc} cards={data.cards2}/>
+         <SplitScreen image={data2[2]?.image} title={data2[2]?.title} desc={data2[2]?.body}/>
 
-       <SplitScreen image={data.splitscreendata[2].image} title={data.splitscreendata[2].title}desc={data.splitscreendata[2].body}/>
+         <CaptionCarousel productFunc={productFunc}cards={data}/>
 
-       <CaptionCarousel productFunc={productFunc} cards={data.cards}/>
+         <SplitScreen image={data2[3]?.image} title={data2[3]?.title} desc={data2[3]?.body}/>
 
-       <SplitScreen image={data.splitscreendata[3].image} title={data.splitscreendata[3].title}desc={data.splitscreendata[3].body}/>
+         <CaptionCarousel productFunc={productFunc} cards={data3}/>
 
-       <CaptionCarousel productFunc={productFunc} cards={data.cards2}/>
+         <SplitScreen image={data2[4]?.image} title={data2[4]?.title} desc={data2[4]?.body}/> 
 
-       <SplitScreen image={data.splitscreendata[4].image} title={data.splitscreendata[4].title}desc={data.splitscreendata[4].body}/>
+         <CaptionCarousel productFunc={productFunc}cards={data}/>
 
-       <CaptionCarousel productFunc={productFunc} cards={data.cards}/>
-
-       <SplitScreen image={data.splitscreendata[5].image} title={data.splitscreendata[5].title}desc={data.splitscreendata[5].body}/>
+         <SplitScreen image={data2[5]?.image} title={data2[5]?.title} desc={data2[5]?.body}/> 
+   
+     
     </div>
   )
 }

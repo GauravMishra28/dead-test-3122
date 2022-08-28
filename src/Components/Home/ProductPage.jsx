@@ -17,31 +17,25 @@ import {
     ListItem,
   } from '@chakra-ui/react';
 import axios from 'axios';
-import { useEffect, useState } from 'react';
-  import { FaInstagram, FaTwitter, FaYoutube } from 'react-icons/fa';
-  import { MdLocalShipping } from 'react-icons/md';
+import { useEffect, useState } from 'react'; 
 import { useNavigate, useParams } from 'react-router-dom';
   
   export default function ProductPage() {
       const {id}= useParams()
       const[data,setData]= useState({})
-      // console.log("props", props)
+     
       const goBack= useNavigate()
       useEffect(()=>{
         getData()
-        // getData2()
       },[])
 
       const getData=()=>{
-        axios(` http://localhost:8080/cards/${id}`)
+        axios(` https://quiet-lake-10107.herokuapp.com/cards/${id}`)
         .then((res)=>setData(res.data))
-        .catch((err)=>console.log(err))
+        .catch((err)=>alert(err))
       }
 
-      // const getData2=()=>{
-      //   axios(` http://localhost:8080/cards2/${props}`)
-      //   .then((res)=>console.log(res))
-      // }
+ 
     return (
       <Container maxW={'7xl'}>
         <SimpleGrid

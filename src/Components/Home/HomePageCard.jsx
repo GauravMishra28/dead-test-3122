@@ -8,10 +8,10 @@ import {
     useBreakpointValue,
   } from '@chakra-ui/react';
 
-import CaptionCarousel from './slider';
+
   
   export default function SplitScreen({image,title,desc}) {
-    // console.log(desc)
+ 
     return (
       <>
       <Stack minH={'40vh'}  py="3rem" width="90%" margin="auto" direction={{ base: 'column', md: 'row' }}>
@@ -45,7 +45,7 @@ import CaptionCarousel from './slider';
               </Text>
               <br />{' '}
             </Heading>
-            <Text fontSize= {['0.7rem', '1rem']} lineHeight="1.5rem"color={'gray.800'}>
+            <Text fontSize= {['0.7rem', '1rem']} lineHeight="1.5rem"color={"white.600"}>
               {desc}
             </Text>
           </Stack>
