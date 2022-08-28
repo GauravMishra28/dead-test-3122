@@ -1,5 +1,3 @@
-import { ReactNode } from 'react';
-// import image from "../Images/Screenshot 2022-08-24 at 3.06.50 PM"
 
 import {
   Box,
@@ -14,14 +12,10 @@ import {
 
 const Logo = () => {
   return (
-    <></>
-      // <img  height={32} viewBox="0 0 120 28" alt='logo' src="https://ksr-static.imgix.net/c51lnrg9-doodle_continue.png?ixlib=rb-2.1.0&auto=compress%2Cformat&w=1000&fit=min&s=dc34091fa7d24f5d676e0e0201337f9b"/>
-    // <svg
-    //   height={32}
-    //   viewBox="0 0 120 28"
-    //   xmlns="http://www.w3.org/2000/svg"
-    //   >
-  
+    <>
+    
+    </>
+    
   )
 };
 

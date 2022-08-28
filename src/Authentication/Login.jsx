@@ -24,6 +24,7 @@ import {
 export default function Login() {
     const [showPassword, setShowPassword] = useState(false);
     const [data,setData]= useState({email:"", password:""})
+   
     const navigate= useNavigate()
     const parseddata= JSON.parse(localStorage.getItem("userdetails")) || {} 
     const handleInput = (e) => {
@@ -44,15 +45,14 @@ export default function Login() {
         else if(parseddata.email === data.email && parseddata.password === data.password){
             alert("fetching data")
             setTimeout(() => {
-             swal(`Welcome back! ${parseddata.username}`);
+             swal(`Welcome back!`);
                navigate("/")
-            }, 500);    
+            }, 1000);    
         }
         setData({email:"", password:""}) 
         }
            
-     console.log(data)
-    console.log(parseddata)
+ 
   return (
 
     <Flex

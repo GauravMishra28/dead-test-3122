@@ -1,13 +1,13 @@
 import React from "react";
-// import data from "../../utils/data.json"
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import {
   Box,
   IconButton,
   useBreakpointValue,
-  Stack,
-  Heading,
+ 
   Text,
-  Container,
+
   Image,
 } from "@chakra-ui/react";
 // Here we have used react-icons package for the icons
@@ -24,6 +24,7 @@ const settings = {
 };
 
 export default function CaptionCarousel({ productFunc, cards }) {
+                 
   const [slider, setSlider] = React.useState(null);
 
 

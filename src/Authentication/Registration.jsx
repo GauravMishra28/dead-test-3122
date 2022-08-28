@@ -9,14 +9,15 @@ import {
     Stack,
     Button,
     Heading,
-    Text,
+   
     useColorModeValue,
-    Link,
+   
   } from '@chakra-ui/react';
   import { useState } from 'react';
   import { ViewIcon, ViewOffIcon } from '@chakra-ui/icons';
   import { useNavigate } from 'react-router-dom';
   import swal from 'sweetalert';
+
 
   
   export default function Registration() {
@@ -30,8 +31,7 @@ import {
    const {name, value}= e.target
   setData({...data,[name]:value ,id: new Date().getTime()})   
   };
-//   console.log(data)
-// let localarr=[]
+
 const handleSubmit=(e)=>{
     e.preventDefault()
     if(data.username.length<1 && data.email.length<1 && data.password.length<1)
@@ -42,7 +42,11 @@ const handleSubmit=(e)=>{
     // localarr.push(data)
     localStorage.setItem("userdetails", JSON.stringify(data))
     setData({username:"", email:"", phone:"", password:"",id:""})
-    navigate("/login")
+   
+      setTimeout(()=>{
+        navigate("/login")
+      },500)
+ 
   }
 }
     return (
