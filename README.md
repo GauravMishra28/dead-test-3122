@@ -1,8 +1,6 @@
-# Kickstarter Clone
+# kickstarter Clone
 
-
-Hello eveyone, My name is Gaurav Mishra and i have cloned "Kickstarter.com" in our constuct week at Masai School. 
-
+Hello eveyone, My name is Gaurav Mishra and i have cloned "kickstarter.com" in our constuct week at Masai School. 
 
 ## Features- 
 
@@ -21,7 +19,7 @@ The site was built using:
 3. [JavaScipt](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 4. [React](https://reactjs.org/)
 5. [React Router](https://reactrouter.com/)
-6. Slick Slider(https://kenwheeler.github.io/slick/)
+6. [Slick Slider](https://kenwheeler.github.io/slick/)
 7. [Chakra UI](https://chakra-ui.com/)
 
 ## Author
