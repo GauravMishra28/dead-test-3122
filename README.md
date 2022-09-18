@@ -22,6 +22,8 @@ The site was built using:
 6. [Slick Slider](https://kenwheeler.github.io/slick/)
 7. [Chakra UI](https://chakra-ui.com/)
 
+## Deployed Link- https://kickstarterclonebygaurav.netlify.app/
+
 ## Author
 
 * [Gaurav Mishra](https://www.linkedin.com/in/gaurav-mishra-435814a8/)
