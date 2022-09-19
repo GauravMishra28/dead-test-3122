@@ -1,6 +1,6 @@
-# kickstarter Clone
+# Kickstarter Clone
 
-Hello eveyone, My name is Gaurav Mishra and i have cloned "kickstarter.com" in our constuct week at Masai School. 
+Hello eveyone, My name is Gaurav Mishra and i have cloned "Kickstarter.com" in our constuct week at Masai School.an American Kickstarter is a public benefit corporation that maintains a global crowdfunding platform focused on creativity. 
 
 ## Features- 
 
